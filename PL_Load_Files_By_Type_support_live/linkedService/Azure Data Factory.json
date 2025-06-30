@@ -1,0 +1,10 @@
+{
+    "name": "Azure Data Factory",
+    "properties": {
+        "annotations": [],
+        "type": "AzureBlobFS",
+        "typeProperties": {
+            "url": "https://csg1003200229ced879.dfs.core.windows.net/"
+        }
+    }
+}

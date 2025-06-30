@@ -1,0 +1,36 @@
+{
+    "name": "DS_MASTER_CHILD_CSV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "Azure Data Factory",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "master_child_export-20191112 (1).csv",
+                "fileSystem": "datalake-files"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "ChildID",
+                "type": "String"
+            },
+            {
+                "name": "ParentID",
+                "type": "String"
+            },
+            {
+                "name": "Details",
+                "type": "String"
+            }
+        ]
+    }
+}

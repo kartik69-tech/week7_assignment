@@ -1,0 +1,40 @@
+{
+    "name": "DS_H_ECOM_ORDER_CSV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "Azure Data Factory",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "H_ECOM_ORDER (1).csv",
+                "fileSystem": "datalake-files"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "OrderID",
+                "type": "String"
+            },
+            {
+                "name": "Product",
+                "type": "String"
+            },
+            {
+                "name": "Quantity",
+                "type": "String"
+            },
+            {
+                "name": "Price",
+                "type": "String"
+            }
+        ]
+    }
+}

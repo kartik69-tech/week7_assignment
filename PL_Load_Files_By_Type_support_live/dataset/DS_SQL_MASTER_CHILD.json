@@ -1,0 +1,40 @@
+{
+    "name": "DS_SQL_MASTER_CHILD",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_AzureSQL",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "ChildID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "ParentID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "Details",
+                "type": "nvarchar"
+            },
+            {
+                "name": "LoadDate",
+                "type": "date"
+            },
+            {
+                "name": "DateKey",
+                "type": "int",
+                "precision": 10
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "master_child"
+        }
+    }
+}

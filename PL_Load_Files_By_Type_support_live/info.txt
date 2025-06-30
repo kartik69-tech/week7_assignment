@@ -1,0 +1,6 @@
+selected resource name:		PL_Load_Files_By_Type
+selected resource type:		pipeline
+factory name:			KartikADF123
+factory location:		centralindia
+subscription id:		517a151e-788f-4a57-bf3b-c7ca5173e743
+time of download (UTC):		Mon, 30 Jun 2025 18:47:29 GMT

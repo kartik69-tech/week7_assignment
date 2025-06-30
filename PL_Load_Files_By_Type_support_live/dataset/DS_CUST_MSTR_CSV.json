@@ -1,0 +1,36 @@
+{
+    "name": "DS_CUST_MSTR_CSV",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "Azure Data Factory",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "CUST_MSTR_20191112 (1).csv",
+                "fileSystem": "datalake-files"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "CustomerID",
+                "type": "String"
+            },
+            {
+                "name": "Name",
+                "type": "String"
+            },
+            {
+                "name": "Email",
+                "type": "String"
+            }
+        ]
+    }
+}

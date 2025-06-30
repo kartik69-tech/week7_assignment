@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "KartikADF123"
+        },
+        "SqlServer1_password": {
+            "value": ""
+        },
+        "AzureSqlDatabase1_password": {
+            "value": ""
+        },
+        "FtpServer1_password": {
+            "value": ""
+        },
+        "LS_AzureSQL_password": {
+            "value": ""
+        },
+        "SqlServer1_properties_typeProperties_server": {
+            "value": "localhost"
+        },
+        "SqlServer1_properties_typeProperties_database": {
+            "value": "OnPremDB"
+        },
+        "SqlServer1_properties_typeProperties_userName": {
+            "value": "adf_user"
+        },
+        "AzureSqlDatabase1_properties_typeProperties_server": {
+            "value": "kartik-server.database.windows.net"
+        },
+        "AzureSqlDatabase1_properties_typeProperties_database": {
+            "value": "OnPremToCloudDB"
+        },
+        "AzureSqlDatabase1_properties_typeProperties_userName": {
+            "value": "Kartik-Mathur"
+        },
+        "FtpServer1_properties_typeProperties_host": {
+            "value": "192.168.29.232"
+        },
+        "FtpServer1_properties_typeProperties_userName": {
+            "value": "ftp-user"
+        },
+        "Azure Data Factory_properties_typeProperties_url": {
+            "value": "https://csg1003200229ced879.dfs.core.windows.net/"
+        },
+        "LS_AzureSQL_properties_typeProperties_server": {
+            "value": "kartik-server.database.windows.net"
+        },
+        "LS_AzureSQL_properties_typeProperties_database": {
+            "value": "OnPremToCloudDB"
+        },
+        "LS_AzureSQL_properties_typeProperties_userName": {
+            "value": "Kartik-Mathur"
+        }
+    }
+}
